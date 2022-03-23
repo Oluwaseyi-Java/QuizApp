@@ -90,8 +90,7 @@
   width: 20px;
 }
 .navigationCard .previous img{
-
-  rotate: 180deg;
+  rotate: 90deg;
 }
 .navigationCard .previous button p{
   margin: 0;
