@@ -81,11 +81,43 @@
   font-size: 15px;
 }
 .navigationCard{
-  
-  
   display: flex;
+  margin-top: 50px;
+  padding: 20px 5px;
   justify-content: space-between;
 }
 .navigationCard img{
   width: 20px;
+}
+.navigationCard .previous img{
+
+  rotate: 180deg;
+}
+.navigationCard .previous button p{
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 1px;
+}
+.navigationCard .next button p{
+  padding: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.previous button{
+  display: flex;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid rgb(203, 209, 211);
+  border-radius: 5px;
+  
+}
+.next button{
+  border: 1px solid rgb(203, 209, 211);
+  border-radius: 5px;
+  display: flex;
+  background-color: white;
+  padding: 5px;
+  
 }

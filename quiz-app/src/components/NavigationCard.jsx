@@ -4,14 +4,19 @@ const NavigationCard = () => {
   return (
     <div className='navigationCard'>
       <div className='previous'>
-        <img alt='nextImg' src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png" />  
-        Previous
-        
+        <button>
+          <img alt='nextImg' src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png" />
+          <p>Previous</p>
+
+        </button>
       </div>
       <div className='next'>
-          Next
-          <img alt='nextImg' src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png" />  
-     </div>
+       <button>
+          <p>Next</p>
+          <img alt='nextImg' src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png" />
+
+       </button> 
+       </div>
     </div>
   )
 }
