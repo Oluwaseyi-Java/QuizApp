@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from './Header'
+import Topic from './topic'
 
 const Topics = () => {
   return (
-    <div>Topics page</div>
+    <div className='topics'>
+      <Header />
+      <Topic/>
+    </div>
   )
 }
 

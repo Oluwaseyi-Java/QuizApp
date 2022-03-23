@@ -28,9 +28,22 @@
   padding-top: 10px;
 }
 .body{
-  border-left: 3px solid rgba(80, 4, 92, 0.674);
+  border-left: 3px solid rgb(76, 16, 86);
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
+  padding: 10px;
+}
+.topicCard{
+  width: 95%;
+  border-left: 3px solid rgb(80, 4, 92);
+  background-color: rgba(80, 4, 92, 0.219);
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 1px 0 1px 5px;
+  margin: 5px auto 5px auto;
+}
+.topic{
   padding: 10px;
 }
