@@ -29,7 +29,7 @@
   padding-top: 10px;
 }
 .body{
-  border-left: 3px solid rgb(80, 4, 92);
+  border-left: 3px solid rgba(80, 4, 92, 0.674);
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;

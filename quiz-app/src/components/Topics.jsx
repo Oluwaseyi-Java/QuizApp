@@ -2,7 +2,7 @@ import React from 'react'
 
 const Topics = () => {
   return (
-    <div>Topics</div>
+    <div>Topics page</div>
   )
 }
 
