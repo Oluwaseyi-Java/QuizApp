@@ -47,3 +47,45 @@
 .topic{
   padding: 10px;
 }
+.questions{
+  padding: 10px;
+}
+.questions h2{
+  color: rgb(76, 16, 86);
+}
+.questionCard{
+  border: 1px solid rgb(229, 208, 233);
+  box-shadow: 1px 1px 4px rgb(207, 204, 207);
+  margin: auto;
+  min-height: 170px;
+  padding: 10px;
+}
+.answerCard{
+  display: flex;
+  margin-top: 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+.answerCard button{
+  border: none;
+  background-color: rgb(76, 16, 86);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 5px;
+  height: 40px;
+  margin: auto 0 auto 0;
+
+}
+.answerCard p{
+  font-size: 15px;
+}
+.navigationCard{
+  
+  
+  display: flex;
+  justify-content: space-between;
+}
+.navigationCard img{
+  width: 20px;
+}
