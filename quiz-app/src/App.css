@@ -1,6 +1,5 @@
 
 
-
 .Home{
   width: 100%;
   padding: 0;
@@ -23,7 +22,7 @@
   text-align: center;
 }
 .card img{
-  width: 50%;
+  width: 60%;
   margin: auto;
   padding-top: 10px;
 }
@@ -87,10 +86,8 @@
   justify-content: space-between;
 }
 .navigationCard img{
-  width: 20px;
-}
-.navigationCard .previous img{
-  rotate: 90deg;
+  height: 15px;
+  margin: auto;
 }
 .navigationCard .previous button p{
   margin: 0;
@@ -119,4 +116,28 @@
   background-color: white;
   padding: 5px;
   
+}
+.welcome{
+  background-color: rgb(76, 16, 86);
+  text-align: center;
+  height: 1000px;
+}
+.welcome p{
+  padding:100px  0;
+  font-size: 20px;
+  color: white;
+  margin: auto;
+
+}
+.welcome .btn{
+  text-align: center;
+}
+.welcome .btn button{
+  border: none;
+  background-color: white;
+  color: rgb(80, 4, 92);
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
 }

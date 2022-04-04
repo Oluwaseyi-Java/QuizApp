@@ -1,8 +1,16 @@
 import React from 'react'
 
 const TopicCard = () => {
+
+
+  const navigate=()=>{
+    window.location.href="/questions"
+  }
+
+
+
   return (
-    <div className='topicCard'>
+    <div className='topicCard' onClick={navigate}>
           <p>Topic</p>
     </div>
   )
