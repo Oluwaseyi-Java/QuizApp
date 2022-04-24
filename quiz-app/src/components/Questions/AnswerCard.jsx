@@ -8,7 +8,7 @@ const AnswerCard = ({Answer}) => {
 
   return (
     <div className='answerCard'>
-      <button onClick={show}>Show Answer</button>
+      <button onClick={Show}>Show Answer</button>
       <p id='answer'>{Answer}</p>
     </div>
   )

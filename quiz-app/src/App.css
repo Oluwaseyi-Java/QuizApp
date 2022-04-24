@@ -91,6 +91,9 @@
   margin: auto 0 auto 0;
 
 }
+.answerCard #answer{
+  display: none;
+}
 .answerCard p{
   font-size: 15px;
   display: none;
