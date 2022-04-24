@@ -1,15 +1,15 @@
 import React from 'react'
 
-const AnswerCard = ({ Display, Render, Answer}) => {
+const AnswerCard = ({Answer}) => {
 
-  // const Show = () => {
-  //   document.getElementById("answer").style.display=
-  // }
+  const Show = () => {
+    document.getElementById("answer").style.display="block"
+  }
 
   return (
     <div className='answerCard'>
-      <button onClick={()=>Display(!Render)}>Show Answer</button>
-      {Render && <p id='answer'>Answer</p>}
+      <button onClick={show}>Show Answer</button>
+      <p id='answer'>{Answer}</p>
     </div>
   )
 }

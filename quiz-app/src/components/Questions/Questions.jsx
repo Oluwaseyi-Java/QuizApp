@@ -11,9 +11,9 @@ const Questions = ({ Questions, Answers, Back }) => {
   const [index, setIndex] = React.useState(0)
   const [question, setQuestions] = React.useState([])
   const [answer, setAnswer] = React.useState([])
-  const [answerRender, setAnswerRender] = React.useState({
-    isRender:true
-  })
+  // const [answerRender, setAnswerRender] = React.useState({
+  //   isRender:true
+  // })
 
   React.useEffect(() => {
     setQuestions(Questions)
@@ -41,18 +41,18 @@ const Questions = ({ Questions, Answers, Back }) => {
   }, [index])
 
 
-  const display = (result) => {
-    // setAnswerRender({
-    //   isRender: result
-    // })
-  }
+  // const display = (result) => {
+  //   // setAnswerRender({
+  //   //   isRender: result
+  //   // })
+  // }
 
   return (
     <div className='questions'>
 
       <h2>Questions:</h2>
       <QuestionCard Question={question[index]} />
-      <AnswerCard Answer={answer[index]} Display={ display} Render={answerRender.isRender} />
+      <AnswerCard Answer={answer[index]} />
 
       <div className='navigationCard'>
         <div className='previous'>
