@@ -1,11 +1,11 @@
 import React from 'react'
 import BodyCard from './BodyCard'
 
-const Body = ({Data}) => {
+const Body = ({Data, Topic}) => {
 
   const Subjects=Data.map((item)=>{
     return(
-      <BodyCard key={item.id} Subject={item.name} />
+      <BodyCard key={item.id} Subject={item.name}  Topic={Topic}/>
     )
   })
 

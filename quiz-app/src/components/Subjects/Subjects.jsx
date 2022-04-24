@@ -1,17 +1,13 @@
 import React from 'react'
 import Body from './Body'
-import Header from './Header'
+import Header from '../Header'
 
-const Home = (props) => {
-
-
-
-
+const Home = ({ Data, Geti }) => {
 
   return (
     <div className='Home'>
         <Header  />
-        <Body Data={props.Data} />
+        <Body Data={Data}  Topic={Geti} />
     </div>
   )
 }

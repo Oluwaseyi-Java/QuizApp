@@ -46,7 +46,22 @@
 .topic{
   padding: 10px;
 }
+.topics button{
+  border: none;
+  color: white;
+  background-color: rgb(76, 16, 86);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0 0 0 30px;
+}
 .questions{
+  padding: 10px;
+}
+.questions #backButton{
+  border: none;
+  color: white;
+  background-color: rgb(76, 16, 86);
+  border-radius: 4px;
   padding: 10px;
 }
 .questions h2{
@@ -78,6 +93,7 @@
 }
 .answerCard p{
   font-size: 15px;
+  display: none;
 }
 .navigationCard{
   display: flex;

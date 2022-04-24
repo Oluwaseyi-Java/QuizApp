@@ -1,45 +1,103 @@
 
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+// import { BrowserRouter, Routes, Route } from "react-router-dom"
 import "./App.css"
-import Subjects from "./components/Subjects";
-import NoPage from "./components/noPage";
-import Questions from "./components/Questions";
-import Topics from "./components/Topics";
+// import axios from "axios";
+import Subjects from "./components/Subjects/Subjects";
+// import NoPage from "./components/noPage";
+import Questions from "./components/Questions/Questions";
+import Topics from "./components/Topics/Topics";
+import Api from "./DataApi"
 
 function App() {
 
 
-  const [allData, setAllData]=React.useState([])
+  const [display, setDisplay] = React.useState({
+    isSubject: true,
+    isTopic: false,
+    isQuestion: false
+
+  })
+  const [allData, setAllData] = React.useState([])
+  const [topics, setTopics] = React.useState([])
+  const [question, setQuestions] = React.useState([])
+  const [answer, setAnswer] = React.useState([])
 
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
+    setAllData(Api)
 
-    fetch("https://api.jsonbin.io/b/6240bf17a703bb674935695b/2")
-      .then(res=>res.json())
-      .then(data=>setAllData(data))
-    }, [])
-    
-    console.log(allData)
+  }, [])
 
+
+  const fectchTopics = (result) => {
+    Api.map((item) => {
+      return (
+        result === item.name ? setTopics(item.topics) : "Error"
+      )
+
+    })
+    setDisplay({
+      isSubject: false,
+      isTopic: true,
+      isQuestion: false
+    })
+
+  }
+
+  const fetchQuestions = (result) => {
+
+    topics.map((topic => {
+      return (
+        result === topic.name ? setQuestions(topic.Questions) : "Error"
+      )
+    }))
+    topics.map((topic => {
+      return (
+        result === topic.name ? setAnswer(topic.Answer) : "Error"
+      )
+    }))
+
+
+    setDisplay({
+      isSubject: false,
+      isTopic: false,
+      isQuestion: true
+    })
+  }
+
+  const TopicBack = () => {
+    setDisplay({
+      isSubject: true,
+      isTopic: false,
+      isQuestion: false
+    })
+  }
+
+  const AnswerBack = () => {
+    setDisplay({
+      isSubject: false,
+      isTopic: true,
+      isQuestion: false
+    })
+
+  }
+  // <BrowserRouter>
+
+  //   <Routes>
+  //     <Route path="*" element={<NoPage />}/>
+  //   </Routes>
+
+  // </BrowserRouter>
 
   return (
 
     <div className="App">
 
-      <BrowserRouter>
-       
-        <Routes>
-        
-          <Route path="/subjects" element={<Subjects Data={allData} />}/>
-          <Route path="/topics" element={<Topics />}/>
-          <Route path="/questions" element={<Questions />}/>
-          <Route path="*" element={<NoPage />}/>
-    
-        </Routes>
-
-      </BrowserRouter>
-     
+      {display.isSubject && <Subjects Data={allData} Geti={fectchTopics} />}
+      {display.isTopic && <Topics Data={topics} Geti={fetchQuestions} Back={TopicBack} />}
+      {display.isQuestion && <Questions Questions={question} Answers={answer} Back={AnswerBack} />}
+      <p>Checking something</p>
     </div>
 
   );
