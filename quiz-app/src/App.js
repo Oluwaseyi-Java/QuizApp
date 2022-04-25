@@ -97,7 +97,7 @@ function App() {
       {display.isSubject && <Subjects Data={allData} Geti={fectchTopics} />}
       {display.isTopic && <Topics Data={topics} Geti={fetchQuestions} Back={TopicBack} />}
       {display.isQuestion && <Questions Questions={question} Answers={answer} Back={AnswerBack} />}
-      <p>Checking something</p>
+      
     </div>
 
   );

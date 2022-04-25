@@ -46,23 +46,39 @@
 .topic{
   padding: 10px;
 }
-.topics button{
+.topics .btn{
+
+  margin: auto;
+  text-align: center;
+  width: 40%;
+}
+.topics .btn button{
   border: none;
   color: white;
   background-color: rgb(76, 16, 86);
   border-radius: 4px;
   padding: 10px;
-  margin: 0 0 0 30px;
+  margin: 10px auto;
+  width: 40%;
 }
 .questions{
   padding: 10px;
 }
-.questions #backButton{
+.questions .btn{
+  
+    margin: auto;
+    text-align: center;
+    width: 40%;
+
+}
+.questions .btn button{
   border: none;
   color: white;
   background-color: rgb(76, 16, 86);
   border-radius: 4px;
   padding: 10px;
+  margin: 10px auto;
+  width: 40%;
 }
 .questions h2{
   color: rgb(76, 16, 86);
@@ -92,7 +108,7 @@
 
 }
 .answerCard #answer{
-  display: none;
+  display: none\;
 }
 .answerCard p{
   font-size: 15px;
@@ -159,4 +175,11 @@
   padding: 15px;
   font-size: 15px;
   font-weight: 600;
+}
+
+
+@media (min-width:680px){
+  .topicCard{
+    width: 50%;
+  }
 }

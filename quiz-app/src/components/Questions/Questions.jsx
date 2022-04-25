@@ -1,11 +1,9 @@
 import React from 'react'
 import AnswerCard from './AnswerCard'
-// import NavigationCard from "./NavigationCard"
 import QuestionCard from './questionCard'
 import prev from '../images/prev.png'
 import next from "../images/next.png"
 
-// <NavigationCard Index={Index}/>
 const Questions = ({ Questions, Answers, Back }) => {
 
   const [index, setIndex] = React.useState(0)
@@ -27,7 +25,7 @@ const Questions = ({ Questions, Answers, Back }) => {
 
   const Next = () => {
     setIndex(prevIndex => prevIndex + 1)
-    
+
   }
 
   React.useEffect(() => {
@@ -71,7 +69,10 @@ const Questions = ({ Questions, Answers, Back }) => {
         </div>
       </div>
 
-      <button id='backButton' onClick={Back}>Back</button>
+      <div className='btn'>
+
+        <button id='backButton' onClick={Back}>Back</button>
+      </div>
     </div>
   )
 }

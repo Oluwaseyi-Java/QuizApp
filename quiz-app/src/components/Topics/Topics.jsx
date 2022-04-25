@@ -7,7 +7,10 @@ const Topics = ({ Data, Geti, Back }) => {
     <div className='topics'>
       <Header />
       <Topic Data={Data} Geti={Geti} />
+      <div className='btn'>
+      
       <button onClick={Back}>Back</button>
+      </div>
     </div>
   )
 }
