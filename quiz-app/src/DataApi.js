@@ -24,7 +24,7 @@ export default [
             },
             {
                 "id": 2,
-                "name": "Logarithm",
+                "name": "Probability",
                 "Questions": [
                     "What is my name?",
                     "How old are you?",
